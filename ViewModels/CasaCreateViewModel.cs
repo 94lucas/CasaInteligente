@@ -19,11 +19,12 @@ namespace CasaInteligente.ViewModels
         [Display(Name = "Usuarios")]
         public int UsuarioId { get; set; }
         
+        /*
         public SelectList Usuarios { get; set; }
         public CasaCreateViewModel()
         {
             Usuarios = new SelectList(Enumerable.Empty<SelectListItem>());
         }
-
+        */
     }
 }

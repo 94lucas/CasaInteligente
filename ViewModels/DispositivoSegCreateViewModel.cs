@@ -24,17 +24,18 @@ namespace CasaInteligente.ViewModels
         [Display(Name = "Casas")]
         public int CasaId { get; set; }
 
-        public SelectList Casas { get; set; }
+        //public SelectList Casas { get; set; }
        
         [Display(Name = "Eventos")]
         public int EventoId { get; set; }
         
-        public SelectList Eventos { get; set; }
+        //public SelectList Eventos { get; set; }
+        /*
         public DispositivoSegCreateViewModel()
         {
             Eventos = new SelectList(Enumerable.Empty<SelectListItem>());
             Casas = new SelectList(Enumerable.Empty<SelectListItem>());
         }
-
+        */
     }
 }
