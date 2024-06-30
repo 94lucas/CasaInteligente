@@ -10,10 +10,4 @@ public class CasaModel
     public int UsuarioId { get; set; }
     public UsuarioModel? Usuario { get; set; }
     
-   
-
-    public CasaModel()
-    {
-        
-    }
 }

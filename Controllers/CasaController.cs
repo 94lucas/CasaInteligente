@@ -8,8 +8,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CasaInteligente.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class CasaController : ControllerBase
     {
         private readonly IMapper _mapper;
