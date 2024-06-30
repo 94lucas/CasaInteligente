@@ -40,18 +40,37 @@ var mapperConfig = new AutoMapper.MapperConfiguration( c =>
 
         c.CreateMap<CasaModel, CasaCreateViewModel>();
         c.CreateMap<CasaCreateViewModel, CasaModel>();
-        c.CreateMap<DispositivoSegModel, DispositivoSegCreateViewModel>();
-        c.CreateMap<DispositivoSegCreateViewModel, DispositivoSegModel>();
+        c.CreateMap<CasaViewModel, CasaModel>();
+        c.CreateMap<CasaModel, CasaViewModel>();
+        c.CreateMap<CasaModel, CasaUpdateViewModel>();
+        c.CreateMap<CasaUpdateViewModel, CasaModel>();
+        
         c.CreateMap<UsuarioModel, UsuarioCreateViewModel>();
         c.CreateMap<UsuarioCreateViewModel, UsuarioModel>();
         c.CreateMap<UsuarioModel, UsuarioViewModel>();
         c.CreateMap<UsuarioViewModel, UsuarioModel>();
         c.CreateMap<UsuarioUpdateViewModel, UsuarioModel>();
         c.CreateMap<UsuarioModel, UsuarioUpdateViewModel>();
-        c.CreateMap<CasaViewModel, CasaModel>();
-        c.CreateMap<CasaModel, CasaViewModel>();
-        c.CreateMap<CasaModel, CasaUpdateViewModel>();
-        c.CreateMap<CasaUpdateViewModel, CasaModel>();
+        
+
+        c.CreateMap<DispositivoSegModel, DispositivoSegViewModel>();
+        c.CreateMap<DispositivoSegViewModel, DispositivoSegModel>();
+        c.CreateMap<DispositivoSegModel, DispositivoSegUpdateViewModel>();
+        c.CreateMap<DispositivoSegUpdateViewModel, DispositivoSegModel>();
+        c.CreateMap<DispositivoSegModel, DispositivoSegCreateViewModel>();
+        c.CreateMap<DispositivoSegCreateViewModel, DispositivoSegModel>();
+
+        c.CreateMap<EventoDeEmergenciaModel, EventoDeEmergenciaViewModel>();
+        c.CreateMap<EventoDeEmergenciaViewModel, EventoDeEmergenciaModel>();
+        c.CreateMap<EventoDeEmergenciaModel, EventoDeEmergenciaCreateViewModel>();
+        c.CreateMap<EventoDeEmergenciaCreateViewModel, EventoDeEmergenciaViewModel>();
+        c.CreateMap<EventoDeEmergenciaModel, EventoDeEmergenciaUpdateViewModel>();
+        c.CreateMap<EventoDeEmergenciaUpdateViewModel, EventoDeEmergenciaViewModel>();
+
+
+
+
+
     }
 );
 
