@@ -20,13 +20,15 @@ namespace CasaInteligente.Controllers
 
         private readonly IEventoDeEmergenciaService _eventoDeEmergenciaService;
 
-        public DispositivoSegController(IDispositivoSegService dispositivoSegService, ICasaService casaService, IEventoDeEmergenciaService eventoDeEmergenciaService, IMapper mapper)
+        public DispositivoSegController(IDispositivoSegService dispositivoSegService,  IMapper mapper)
         {
             _dispositivoSegService = dispositivoSegService;
-            _casaService = casaService;
-            _eventoDeEmergenciaService = eventoDeEmergenciaService;
+            //_casaService = casaService;
+            //_eventoDeEmergenciaService = eventoDeEmergenciaService;
             _mapper = mapper;
         }
+
+       
         /*
         public IActionResult Index()
         {

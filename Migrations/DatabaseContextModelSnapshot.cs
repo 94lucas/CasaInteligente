@@ -90,7 +90,6 @@ namespace CasaInteligente.Migrations
                         .HasColumnType("NUMBER(10)");
 
                     b.Property<DateTime?>("DataEvento")
-                        .IsRequired()
                         .HasColumnType("DATE");
 
                     b.Property<int?>("DispositivoId")
