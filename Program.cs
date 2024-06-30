@@ -46,6 +46,12 @@ var mapperConfig = new AutoMapper.MapperConfiguration( c =>
         c.CreateMap<UsuarioCreateViewModel, UsuarioModel>();
         c.CreateMap<UsuarioModel, UsuarioViewModel>();
         c.CreateMap<UsuarioViewModel, UsuarioModel>();
+        c.CreateMap<UsuarioUpdateViewModel, UsuarioModel>();
+        c.CreateMap<UsuarioModel, UsuarioUpdateViewModel>();
+        c.CreateMap<CasaViewModel, CasaModel>();
+        c.CreateMap<CasaModel, CasaViewModel>();
+        c.CreateMap<CasaModel, CasaUpdateViewModel>();
+        c.CreateMap<CasaUpdateViewModel, CasaModel>();
     }
 );
 
