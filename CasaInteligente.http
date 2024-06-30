@@ -1,0 +1,6 @@
+@CasaInteligente_HostAddress = http://localhost:5289
+
+GET {{CasaInteligente_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
