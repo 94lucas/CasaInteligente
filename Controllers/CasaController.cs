@@ -66,84 +66,18 @@ namespace CasaInteligente.Controllers
             }
             else
             {
-                _mapper.Map(viewModel, )
+                _mapper.Map(viewModel, casaExistente);
+                _casaService.AtualizarCasa(casaExistente);
+                return NoContent();
             }
         }
-        
-        
-        
-        
 
-        [HttpGet]
-        public IActionResult Create()
+        [HttpDelete("{id}")]
+        public ActionResult Delete(int id)
         {
-            var viewModel = new CasaCreateViewModel
-            {
-                Usuarios = new SelectList(_usuarioService.ListarUsuarios()
-                                            , "UsuarioId", "Nome")
-            };
-            return View(viewModel);
+            _casaService.DeletarCasa(id);
+            return NotFound();
         }
 
-        [HttpPost]
-        public IActionResult Create(CasaCreateViewModel viewModel)
-        {
-
-            if (ModelState.IsValid)
-            {
-                var casa = _mapper.Map<CasaModel>(viewModel);
-                _casaService.CriarCasa(casa);
-                TempData["mensagemSucesso"] = $"Ocliente {casa.CasaId} foi cadastrado com sucesso";
-                return RedirectToAction(nameof(Index));
-            }
-            else
-            {
-                viewModel.Usuarios = new SelectList(_usuarioService.ListarUsuarios(), "UsuarioId", "Nome", viewModel.UsuarioId);
-                return View(viewModel);
-            }
-        }
-
-        [HttpGet]
-        public IActionResult Edit(int id)
-        {
-            var usuario = _usuarioService.ObterUsuarioPorId(id);
-            if (usuario == null)
-            {
-                return NotFound();
-            }
-            else
-            {
-                return View(usuario);
-            }
-        }
-
-        [HttpPost]
-        public IActionResult Edit(UsuarioModel usuarioModel)
-        {
-            _usuarioService.AtualizarUsuario(usuarioModel);
-            TempData["mensagemSucesso"] = $"Os dados do Usuario {usuarioModel.Nome} foram alterados com sucesso";
-            return RedirectToAction(nameof(Index));
-        }
-
-        [HttpGet]
-        public IActionResult Detail(int id)
-        {
-            var usuario = _usuarioService.ObterUsuarioPorId(id);
-            if (usuario == null)
-            {
-                return NotFound();
-            }
-            else
-            {
-                return View(usuario);
-            }
-        }
-
-        [HttpGet]
-        public IActionResult Delete(int id)
-        {
-            _usuarioService.DeletarUsuario(id);
-            return RedirectToAction(nameof(Index));
-        }
     }
 }

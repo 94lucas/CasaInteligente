@@ -237,3 +237,4 @@
 /Users/lucas/CasaInteligente/obj/Debug/net8.0/CasaInteligente.pdb
 /Users/lucas/CasaInteligente/obj/Debug/net8.0/CasaInteligente.genruntimeconfig.cache
 /Users/lucas/CasaInteligente/obj/Debug/net8.0/ref/CasaInteligente.dll
+/Users/lucas/CasaInteligente/obj/Debug/net8.0/CasaInteligente.sourcelink.json
