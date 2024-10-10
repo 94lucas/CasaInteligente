@@ -7211,24 +7211,27 @@
     ]
   },
   "packageFolders": {
-    "/Users/lucas/.nuget/packages/": {}
+    "C:\\Users\\jacom\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lucas/CasaInteligente/CasaInteligente.csproj",
+      "projectUniqueName": "G:\\FIAP-ADS\\aulas_2024\\Trabalhos\\Fase_6_casainteligente\\casainteligente\\CasaInteligente.csproj",
       "projectName": "CasaInteligente",
-      "projectPath": "/Users/lucas/CasaInteligente/CasaInteligente.csproj",
-      "packagesPath": "/Users/lucas/.nuget/packages/",
-      "outputPath": "/Users/lucas/CasaInteligente/obj/",
+      "projectPath": "G:\\FIAP-ADS\\aulas_2024\\Trabalhos\\Fase_6_casainteligente\\casainteligente\\CasaInteligente.csproj",
+      "packagesPath": "C:\\Users\\jacom\\.nuget\\packages\\",
+      "outputPath": "G:\\FIAP-ADS\\aulas_2024\\Trabalhos\\Fase_6_casainteligente\\casainteligente\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/lucas/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\jacom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7330,7 +7333,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
