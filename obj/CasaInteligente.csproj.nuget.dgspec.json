@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -85,21 +80,15 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.8.1, )"
+              "version": "[2.5.3, )"
             },
             "xunit.assert": {
               "target": "Package",
-              "version": "[2.8.1, )"
+              "version": "[2.5.3, )"
             },
             "xunit.extensibility.core": {
               "target": "Package",
-              "version": "[2.8.1, )"
-            },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.8.1, )"
+              "version": "[2.5.3, )"
             }
           },
           "imports": [

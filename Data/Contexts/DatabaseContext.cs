@@ -38,9 +38,9 @@ public class DatabaseContext : DbContext
             entity.HasKey(e => e.EventoId);
             entity.Property(e => e.Tipo).IsRequired().HasMaxLength(50);
             entity.Property(e => e.Mensagem).IsRequired().HasMaxLength(100);
-            entity.Property(e => e.DataEvento).HasColumnType("DATE").IsRequired();
+            entity.Property(e => e.DataEvento).HasColumnType("DATE");
             entity.HasOne(e => e.Dispositivos)
-                .WithMany();
+                .WithMany().HasForeignKey(e=> e.DispositivoId);
         });
 
         modelBuilder.Entity<DispositivoSegModel>(entity =>

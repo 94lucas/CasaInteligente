@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CasaInteligente")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fee3c5f41c49ee42d9aba8135df9a6d0c01c84af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ac7b35369884ca832a84b7823e11b5a44062066")]
 [assembly: System.Reflection.AssemblyProductAttribute("CasaInteligente")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CasaInteligente")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

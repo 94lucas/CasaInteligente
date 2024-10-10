@@ -23,17 +23,32 @@
         <PackageReference Include="Oracle.EntityFrameworkCore" Version="8.23.40" />
         <PackageReference Include="Oracle.ManagedDataAccess" Version="23.4.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
-        <PackageReference Include="xunit" Version="2.8.1" />
-        <PackageReference Include="xunit.assert" Version="2.8.1" />
-        <PackageReference Include="xunit.extensibility.core" Version="2.8.1" />
-        <PackageReference Include="xunit.runner.visualstudio" Version="2.8.1">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
+        <PackageReference Include="xunit" Version="2.5.3" />
+        <PackageReference Include="xunit.assert" Version="2.5.3" />
+        <PackageReference Include="xunit.extensibility.core" Version="2.5.3" />
     </ItemGroup>
 
     <ItemGroup>
       <Content Include="ViewModels\.DS_Store" />
+      <Content Remove="CasaInteligente.Test\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="CasaInteligente.Test\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="CasaInteligente.Test\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="CasaInteligente.Test\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="CasaInteligente.Test\obj\CasaInteligente.Test.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="CasaInteligente.Test\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="CasaInteligente.Test\obj\project.packagespec.json" />
     </ItemGroup>
 
 </Project>

@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasaInteligente", "CasaInteligente.csproj", "{EB50441A-025C-42EA-A95D-70A5586A6242}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasaInteligente.Test", "CasaInteligente.Test\CasaInteligente.Test.csproj", "{A620433E-E4B1-4EA8-B7D5-AE6F0CEF7429}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{EB50441A-025C-42EA-A95D-70A5586A6242}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB50441A-025C-42EA-A95D-70A5586A6242}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB50441A-025C-42EA-A95D-70A5586A6242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A620433E-E4B1-4EA8-B7D5-AE6F0CEF7429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A620433E-E4B1-4EA8-B7D5-AE6F0CEF7429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A620433E-E4B1-4EA8-B7D5-AE6F0CEF7429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A620433E-E4B1-4EA8-B7D5-AE6F0CEF7429}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

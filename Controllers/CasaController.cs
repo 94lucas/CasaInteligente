@@ -25,6 +25,8 @@ namespace CasaInteligente.Controllers
             _mapper = mapper;
         }
 
+        
+
         [HttpGet]
         public ActionResult<IEnumerable<CasaViewModel>> Get()
         {
